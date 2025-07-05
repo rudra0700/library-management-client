@@ -161,6 +161,7 @@ export function EditBook() {
             <FormField
               control={form.control}
               name="copies"
+              defaultValue={1}
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Copies</FormLabel>

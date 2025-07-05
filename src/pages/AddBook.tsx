@@ -39,6 +39,7 @@ export function AddBook() {
     const bookData = {
       ...data,
       copies: Number(data.copies),
+      isbn: Number(data.isbn),
       available: true,
     };
     console.log(bookData);
@@ -49,17 +50,19 @@ export function AddBook() {
     form.reset();
   };
   return (
+    <div className="max-w-4xl mx-auto text-center mt-20 p-10">
+
     <Dialog open={open} onOpenChange={setOpen}>
       <form>
         <DialogTrigger asChild>
-          <Button className="bg-green-500">Add Task</Button>
+          <Button className="bg-gray-600 w-40 p-10">Add Book</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogDescription className="sr-only">
             use this form to add task
           </DialogDescription>
           <DialogHeader>
-            <DialogTitle className="text-green-500">Add Task</DialogTitle>
+            <DialogTitle className="text-black">Add Book</DialogTitle>
           </DialogHeader>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -183,5 +186,6 @@ export function AddBook() {
         </DialogContent>
       </form>
     </Dialog>
+    </div>
   );
 }
