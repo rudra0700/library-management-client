@@ -22,16 +22,16 @@ A full-featured Library Management System built using **React (TypeScript)**, **
 **Backend**
 
 ```js
-git clone https://github.com/yourusername/library-management-system.git
-cd library-management-system
+git clone https://github.com/rudra0700/library-management-server
+cd library-management-server
 npm install
 npm run dev
 ```
 
 **Frontend**
 ```js
-git clone https://github.com/yourusername/library-management-system.git
-cd library-management-system
+git clone https://github.com/rudra0700/library-management-client
+cd library-management-client
 npm install
 npm run dev
 ```
